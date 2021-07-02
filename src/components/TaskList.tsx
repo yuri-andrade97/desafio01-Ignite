@@ -22,6 +22,10 @@ export function TaskList() {
       isComplete: false
     }
 
+    if(!newTaskTitle) {
+      return;
+    }
+
     setTasks(task => [...task, newTask])
   }
 
